@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="flex flex-col justify-center items-center pt-20">
+
+        <!-- birinchi topshiriq -->
+
+        <section>
+            <h1 class="text-2xl font-serif py-3">
+                Create box
+            </h1>
+            <form class="box-form grid grid-cols-2 gap-10 border-2 border-black p-20">
+                <div>
+                    <p class="text-lg font-serif">width</p>
+                    <input type="text" placeholder="width"
+                        class="input-width border-2 border-black px-4 rounded-sm py-2">
+                </div>
+                <div>
+                    <p class="text-lg font-serif">height</p>
+                    <input type="text" placeholder="height"
+                        class="input-height border-2 border-black px-4 rounded-sm py-2">
+                </div>
+                <div>
+                    <p class="text-lg font-serif">radius</p>
+                    <input type="text" placeholder="radius"
+                        class="input-radius border-2 border-black px-4 rounded-sm py-2">
+                </div>
+                <div>
+                    <p class="text-lg font-serif">color</p>
+                    <input type="color" placeholder="color"
+                        class="input-color border-2 border-black px-4 rounded-sm py-2">
+
+                </div>
+                <button type="submit" class="bg-black text-white p-2">OK</button>
+            </form>
+
+            <div class="box-container">
+            </div>
+        </section>
+
+
+        <!-- ikkinchi topshiriq -->
+
+
+        <section class="flex space-x-10 border-2 border-black p-10 bg-white shadow-md my-10">
+            <div>
+                <h2 class="text-center font-bold mb-4">USERS</h2>
+                <div class="mb-4 flex">
+                    <input type="text" id="nameInput" class="border-2 border-gray-300 p-2 rounded mr-2"
+                        placeholder="Ismingizni kiriting">
+                    <button id="addUserBtn" class="bg-black text-white px-4 py-2">Qo'shish</button>
+                </div>
+                <ul id="usersList" class="border p-4 space-y-2">
+                    <li><input type="checkbox" class="user-checkbox" value="Xalimov Abdusobur"> Xalimov Abdusobur</li>
+                    <li><input type="checkbox" class="user-checkbox" value="Sirojov Po'lot"> Sirojov Po'lot</li>
+                    <li><input type="checkbox" class="user-checkbox" value="Saidov Sirojiddin"> Saidov Sirojiddin</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <button id="transferToActive" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">O'tkazish
+                    =></button>
+                <button id="transferToUsers" class="bg-blue-500 text-white px-4 py-2 rounded">
+                    <= Qaytarish</button>
+            </div>
+
+            <div>
+                <h2 class="text-center font-bold mb-4">ACTIVES</h2>
+                <ul id="activeList" class="border p-4 space-y-2">
+
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- uchinchi topshiriq     -->
+
+
+        <section class="bg-blue-500 w-full flex justify-center py-40">
+            <div class="bg-white w-96 flex flex-col justify-center py-10 items-center gap-6">
+                <div>
+                    <form class="boiling__form">
+                        <input type="number" class="boiling__input border-b-2 border-b-black text-black">
+                        <button class="boiling__button px-4 bg-black p-2 text-white" type="submit">Start boiling</button>
+                    </form>
+                </div>
+                <div class="boiling__content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
